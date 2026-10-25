@@ -1,0 +1,317 @@
+/* ==========================================================================
+   DREAM CARS - Luxury VIP Sign Up Page Styling
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --gold: #d99b26;
+    --gold-gradient: linear-gradient(135deg, #e5a93c 0%, #d48b18 100%);
+    --gold-glow: rgba(229, 169, 60, 0.28);
+    --obsidian: #090d16;
+    --surface-dark: #101626;
+    --surface-card: #ffffff;
+    --border-card: #e2e8f0;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 20%, rgba(229, 169, 60, 0.12) 0%, var(--obsidian) 70%);
+    padding: 3rem 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.signup-brand {
+    margin-bottom: 2.2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.signup-brand a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.4rem;
+    text-decoration: none;
+}
+
+.signup-brand .logo-badge {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.3rem;
+    background: var(--gold-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.2rem;
+    box-shadow: 0 4px 18px var(--gold-glow);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.signup-brand a:hover .logo-badge {
+    transform: rotate(6deg) scale(1.06);
+}
+
+.signup-brand .logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.signup-brand .logo-main {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+.signup-brand .logo-main span {
+    color: var(--gold);
+}
+
+.signup-brand .logo-sub {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 520px;
+    background: var(--surface-card);
+    padding: 3.8rem 3.5rem;
+    border-radius: 2.2rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.signup-header h2 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--obsidian);
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.5px;
+}
+
+.signup-header h2 span {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.signup-header p {
+    font-size: 1.45rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+    text-align: left;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: #1e293b;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.form-group label i {
+    color: var(--gold);
+    margin-right: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid var(--border-card);
+    border-radius: 1rem;
+    font-size: 1.45rem;
+    background: #f8fafc;
+    font-family: inherit;
+    transition: all 0.25s ease;
+}
+
+.form-group input:focus {
+    background: #ffffff;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-glow);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.35rem;
+    background: var(--gold-gradient);
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 18px var(--gold-glow);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 139, 24, 0.4);
+}
+
+.social-signup {
+    margin: 2.2rem 0 1.5rem;
+    text-align: center;
+}
+
+.social-signup p {
+    color: #94a3b8;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.social-signup p::before,
+.social-signup p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 28%;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.social-signup p::before { left: 0; }
+.social-signup p::after { right: 0; }
+
+.social-buttons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.1rem;
+    border: 1px solid var(--border-card);
+    border-radius: 1rem;
+    background: #ffffff;
+    color: #334155;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.social-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+}
+
+.social-btn i {
+    font-size: 1.5rem;
+}
+
+.social-btn.google i {
+    color: #ea4335;
+}
+
+.social-btn.facebook i {
+    color: #1877f2;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.8rem;
+    font-size: 1.4rem;
+    color: #64748b;
+}
+
+.login-link a {
+    color: var(--gold);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    margin-top: 2.2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.back-home a {
+    color: #cbd5e1;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.2s;
+}
+
+.back-home a:hover {
+    color: var(--gold);
+}
+
+.back-home a i {
+    color: var(--gold);
+}
+
+@media (max-width: 580px) {
+    .signup-container {
+        padding: 3rem 2rem;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

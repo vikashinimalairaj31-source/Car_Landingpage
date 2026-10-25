@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Test Drive & Consultation - DREAM CARS</title>
+    <meta name="description" content="Book a private doorstep test drive or showroom consultation for your dream vehicle with Dream Cars.">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bookappointment.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-location-dot"></i> 8 Flagship Showrooms across Tamil Nadu</span>
+            <span><i class="fa-solid fa-shield-halved"></i> 150-Point Certified Inspection Guarantee</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+            <span><i class="fa-solid fa-clock"></i> Mon - Sun: 9:00 AM – 9:00 PM</span>
+        </div>
+    </div>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-badge"><i class="fa-solid fa-crown"></i></div>
+            <div class="logo-text">
+                <span class="logo-main">DREAM<span>CARS</span></span>
+                <span class="logo-sub">Certified Luxury Automotive</span>
+            </div>
+        </a>
+
+        <nav class="navbar" id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#vehicles">Inventory</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#featured">The Luxury Vault</a>
+            <a href="index.html#reviews">Testimonials</a>
+            <a href="index.html#contact">Contact</a>
+
+            <!-- Mobile & Tablet Menu Drawer Actions -->
+            <div class="nav-drawer-actions">
+                <a href="index.html#vehicles" class="btn btn-nav-drawer">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Showroom
+                </a>
+                <div class="nav-drawer-contact">
+                    <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+                    <span><i class="fa-solid fa-clock"></i> 9:00 AM – 9:00 PM</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-actions">
+            <a href="index.html#vehicles" class="btn btn-secondary btn-header-cta" title="Back to Showroom">
+                <i class="fa-solid fa-arrow-left"></i> <span class="btn-cta-text">Back to Showroom</span>
+            </a>
+            <div id="menu-btn" class="fa-solid fa-bars" aria-label="Toggle Navigation Menu"></div>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="navbar-backdrop" id="nav-backdrop"></div>
+
+    <!-- Appointment Section Starts -->
+    <section class="appointment-section">
+        <div class="appointment-container">
+            <div class="appointment-header">
+                <span class="section-tag" style="margin-bottom: 1.5rem;"><i class="fa-solid fa-calendar-check"></i> VIP Concierge</span>
+                <h2>Schedule Your <span>Private Test Drive</span></h2>
+                <p>Experience performance on your own terms. Select your preferred date, time, and vehicle for a personalized showroom or doorstep consultation.</p>
+            </div>
+
+            <div id="appointment-alert" class="appointment-alert"></div>
+
+            <form id="appointment-form" class="appointment-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="appointment-name"><i class="fa-solid fa-user"></i> Full Name</label>
+                        <input type="text" placeholder="e.g. John Doe" class="box" id="appointment-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-email"><i class="fa-solid fa-envelope"></i> Official Email</label>
+                        <input type="email" placeholder="e.g. john@example.com" class="box" id="appointment-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-phone"><i class="fa-solid fa-phone"></i> Mobile Number</label>
+                        <input type="tel" placeholder="+91 98765 43210" class="box" id="appointment-phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-car"><i class="fa-solid fa-car"></i> Selected Vehicle</label>
+                        <select class="box" id="appointment-car">
+                            <option value="General Consultation">General Consultation / Any Vehicle</option>
+                            <option value="POLO">Volkswagen Polo GT TSI (₹ 8.50 Lakh)</option>
+                            <option value="SWIFT">Maruti Suzuki Swift ZXi+ (₹ 9.00 Lakh)</option>
+                            <option value="VENUE">Hyundai Venue SX (O) Turbo (₹ 15.00 Lakh)</option>
+                            <option value="KIGER">Renault Kiger RXZ Turbo (₹ 10.00 Lakh)</option>
+                            <option value="RAPID">Skoda Rapid 1.0 TSI (₹ 8.00 Lakh)</option>
+                            <option value="PUNCH">Tata Punch Creative (₹ 7.50 Lakh)</option>
+                            <option value="BMW M-5">BMW M-5 Competition (₹ 2.37 Cr)</option>
+                            <option value="PHANTOM">Rolls-Royce Phantom VIII (₹ 9.50 Cr)</option>
+                            <option value="MAYBACH">Mercedes-Maybach S-Class (₹ 4.45 Cr)</option>
+                            <option value="LEXUS">Lexus LC 500h Coupe (₹ 2.05 Cr)</option>
+                            <option value="LAMBORGHINI">Lamborghini Huracán EVO (₹ 4.10 Cr)</option>
+                            <option value="CADILLAC">Cadillac Escalade Platinum (₹ 1.85 Cr)</option>
+                            <option value="AUDI">Audi R8 V10 Plus (₹ 2.75 Cr)</option>
+                            <option value="MERCEDES BENZ">Mercedes-AMG GT Coupe (₹ 3.10 Cr)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-date"><i class="fa-solid fa-calendar-days"></i> Preferred Date</label>
+                        <input type="date" class="box" id="appointment-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointment-time"><i class="fa-solid fa-clock"></i> Preferred Time Window</label>
+                        <input type="time" class="box" id="appointment-time" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="appointment-notes"><i class="fa-solid fa-comment-dots"></i> Special Requirements or Location Details</label>
+                        <textarea placeholder="Specify if you prefer a Doorstep Test Drive (mention your area/pincode), trade-in evaluation, or financing advice..." class="box" id="appointment-notes"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-calendar-check"></i> Confirm Private Appointment</button>
+            </form>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-to-home"><i class="fa-solid fa-arrow-left"></i> Return to Main Showroom</a>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer class="footer">
+        <div class="footer-box-container">
+            <div class="footer-about">
+                <h2>DREAM<span>CARS</span></h2>
+                <p>South India's most trusted certified luxury and performance pre-owned automotive showroom. Dedicated to unmatched quality, complete transparency, and white-glove customer care.</p>
+            </div>
+
+            <div class="box">
+                <h3>Flagship Branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Chennai (OMR & Anna Nagar)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Coimbatore (Avinashi Rd)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Salem & Pondicherry</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Navigation</h3>
+                <a href="index.html#home"><i class="fa-solid fa-angle-right"></i> Showroom Home</a>
+                <a href="index.html#vehicles"><i class="fa-solid fa-angle-right"></i> Certified Inventory</a>
+                <a href="index.html#services"><i class="fa-solid fa-angle-right"></i> Ownership Services</a>
+                <a href="login.html"><i class="fa-solid fa-angle-right"></i> Client Portal</a>
+            </div>
+
+            <div class="box">
+                <h3>Direct Concierge</h3>
+                <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+                <a href="mailto:concierge@dreamcars.com"><i class="fa-solid fa-envelope"></i> concierge@dreamcars.com</a>
+                <a href="#"><i class="fa-solid fa-shield-halved"></i> 100% Verified Ownership Transfer</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2026 DREAM CARS Automotive Pvt Ltd. All rights reserved.</span>
+            <span>Certified Pre-Owned Excellence • Privacy Policy • Terms of Sale</span>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <script src="js/bookappointment.js"></script>
+</body>
+
+</html>

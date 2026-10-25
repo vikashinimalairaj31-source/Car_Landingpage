@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Book Appointment & Doorstep Test Drive - Luxury Automotive Styling
+   ========================================================================== */
+
+.appointment-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 25%, rgba(229, 169, 60, 0.08) 0%, rgba(248, 250, 252, 1) 70%);
+    padding: 7rem 8% 6rem;
+}
+
+.appointment-container {
+    width: 100%;
+    max-width: 680px;
+    background: #ffffff;
+    border-radius: 2.4rem;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    padding: 4.5rem;
+    border: 1px solid var(--border-card);
+    position: relative;
+    overflow: hidden;
+}
+
+.appointment-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gold-gradient);
+}
+
+.appointment-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.appointment-header h2 {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    color: var(--obsidian);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.appointment-header h2 span {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.appointment-header p {
+    font-size: 1.55rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.appointment-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+.appointment-form .form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.appointment-form .form-group label {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--obsidian);
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.appointment-form .form-group label i {
+    color: var(--gold);
+    margin-right: 0.6rem;
+}
+
+.appointment-form .box {
+    width: 100%;
+    padding: 1.3rem 1.6rem;
+    font-size: 1.45rem;
+    color: var(--obsidian);
+    background: #f8fafc;
+    border: 1px solid var(--border-card);
+    border-radius: 1rem;
+    font-family: var(--font-body);
+    transition: all 0.25s ease;
+}
+
+.appointment-form .box:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-glow);
+    background: #ffffff;
+}
+
+.appointment-form select.box {
+    cursor: pointer;
+    background-color: #f8fafc;
+}
+
+.appointment-form textarea.box {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.appointment-form .btn {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.appointment-alert {
+    display: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.appointment-alert.success {
+    display: block;
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.appointment-alert.error {
+    display: block;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.back-to-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2.5rem;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.back-to-home:hover {
+    color: var(--obsidian);
+}
+
+.back-to-home i {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .appointment-section {
+        padding: 5rem 5% 4rem;
+    }
+    .appointment-container {
+        padding: 3rem 2rem;
+    }
+    .appointment-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

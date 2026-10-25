@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup - DREAM CARS</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+
+    <!-- Login Stylesheet -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-brand">
+        <a href="index.html">
+            <div class="logo-badge"><i class="fa-solid fa-crown"></i></div>
+            <div class="logo-text">
+                <span class="logo-main">DREAM<span>CARS</span></span>
+                <span class="logo-sub">Certified Luxury Automotive</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="form-container">
+        <div class="form-header">
+            <button id="login-tab" class="active" type="button"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+            <button id="signup-tab" type="button"><i class="fa-solid fa-user-plus"></i> Signup</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="active">
+            <div class="form-group">
+                <label for="login-email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password"><i class="fa-solid fa-lock"></i> Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <p class="error-message" id="login-error"></p>
+            <button type="submit" class="submit-btn">Login to Account</button>
+            <div class="form-footer">
+                <a href="#" onclick="alert('Please contact support or register a new account.'); return false;">Forgot password?</a>
+                <a href="signup.html">Full Signup Form</a>
+            </div>
+        </form>
+
+        <!-- Quick Signup Form -->
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="signup-name"><i class="fa-solid fa-user"></i> Full Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password"><i class="fa-solid fa-lock"></i> Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+            </div>
+            <p class="error-message" id="signup-error"></p>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
+
+    <div class="back-home">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Return to Dream Cars Showroom</a>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

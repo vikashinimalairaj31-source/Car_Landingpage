@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAM CARS | Certified Luxury & Pre-Owned Automotive Showroom</title>
+    <meta name="description" content="Dream Cars is South India's premier certified pre-owned luxury car dealership. 150-point inspection, transparent pricing, 1-year warranty, and doorstep test drives.">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-location-dot"></i> 8 Flagship Showrooms across Tamil Nadu</span>
+            <span><i class="fa-solid fa-shield-halved"></i> 150-Point Certified Inspection Guarantee</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+            <span><i class="fa-solid fa-clock"></i> Mon - Sun: 9:00 AM – 9:00 PM</span>
+        </div>
+    </div>
+
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-badge"><i class="fa-solid fa-crown"></i></div>
+            <div class="logo-text">
+                <span class="logo-main">DREAM<span>CARS</span></span>
+                <span class="logo-sub">Certified Luxury Automotive</span>
+            </div>
+        </a>
+
+        <!-- Navbar Section -->
+        <nav class="navbar" id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Inventory</a>
+            <a href="#services">Services</a>
+            <a href="#finance">Financing</a>
+            <a href="#featured">The Luxury Vault</a>
+            <a href="#reviews">Testimonials</a>
+            <a href="#contact">Contact</a>
+
+            <!-- Mobile & Tablet Menu Drawer Actions -->
+            <div class="nav-drawer-actions">
+                <a href="bookappointment.html" class="btn btn-nav-drawer">
+                    <i class="fa-solid fa-calendar-check"></i> Book VIP Test Drive
+                </a>
+                <div class="nav-drawer-contact">
+                    <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+                    <span><i class="fa-solid fa-clock"></i> 9:00 AM – 9:00 PM</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+            <a href="bookappointment.html" class="btn btn-header-cta" title="Book Test Drive">
+                <i class="fa-solid fa-calendar-check"></i> <span class="btn-cta-text">Book Test Drive</span>
+            </a>
+
+            <div id="login-btn" title="Client Account">
+                <button class="btn" type="button"><i class="fa-regular fa-user"></i> Login</button>
+                <i class="fa-solid fa-user login-icon-btn"></i>
+            </div>
+
+            <!-- User Info Display -->
+            <div id="user-info" class="user-info" style="display: none;">
+                <span class="user-name"></span>
+                <button type="button" class="btn" id="logout-button" title="Sign Out"><i class="fa-solid fa-arrow-right-from-bracket"></i> <span class="logout-text">Logout</span></button>
+            </div>
+
+            <div id="menu-btn" class="fa-solid fa-bars" aria-label="Toggle Navigation Menu"></div>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+    <div class="navbar-backdrop" id="nav-backdrop"></div>
+
+    <!-- Login Modal Container Starts -->
+    <div class="login-form-container">
+        <span id="close-login-btn" class="fa-solid fa-xmark"></span>
+        <form id="login-form">
+            <h3>Client Sign In</h3>
+            <p style="margin-bottom: 1.5rem; padding: 0;">Sign in to access saved vehicles, test drive bookings, and private alerts.</p>
+            <input type="email" placeholder="Official Email Address" class="box" id="login-email" required>
+            <input type="password" placeholder="Account Password" class="box" id="login-password" required>
+            <p>Forgot your password? <a href="login.html">Reset here</a></p>
+            <button type="submit" class="btn">Sign In to Account</button>
+            <p>New to Dream Cars? <a href="signup.html">Create an Account</a></p>
+        </form>
+    </div>
+    <!-- Login Modal Container Ends -->
+
+    <!-- Hero Section Starts -->
+    <section class="home" id="home">
+        <div class="hero-pill">
+            <i class="fa-solid fa-crown"></i> South India's Premier Certified Luxury Dealership
+        </div>
+
+        <h1>
+            Drive The <span>Extraordinary</span>.
+        </h1>
+
+        <p class="hero-desc">
+            Explore our curated fleet of luxury sedans, performance sports cars, and certified pre-owned vehicles. Every vehicle has undergone a 150-point diagnostic scan with verified service history.
+        </p>
+
+        <div class="hero-cta-group">
+            <a href="#vehicles" class="btn">
+                Explore Inventory <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="bookappointment.html" class="btn btn-secondary">
+                <i class="fa-solid fa-calendar-days"></i> Schedule Doorstep Drive
+            </a>
+        </div>
+
+        <div class="hero-car-wrapper">
+            <img src="./image/car0.png" alt="Dream Cars Performance Vehicle">
+            <div class="hero-car-glow"></div>
+        </div>
+
+        <div class="hero-highlights">
+            <div class="highlight-chip"><i class="fa-solid fa-certificate"></i> 150-Point Scan</div>
+            <div class="highlight-chip"><i class="fa-solid fa-shield-halved"></i> 1-Year Comprehensive Warranty</div>
+            <div class="highlight-chip"><i class="fa-solid fa-truck-fast"></i> Doorstep VIP Test Drive</div>
+            <div class="highlight-chip"><i class="fa-solid fa-hand-holding-dollar"></i> Instant 0% Down Financing</div>
+        </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+    <!-- Trust / Stats Section Starts -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa-solid fa-car-side"></i>
+            <div class="content">
+                <h3>3,100+</h3>
+                <p>Vehicles Delivered</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-building-circle-check"></i>
+            <div class="content">
+                <h3>8+</h3>
+                <p>Flagship Showrooms</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="content">
+                <h3>150-Point</h3>
+                <p>Certified Inspection</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <div class="content">
+                <h3>4.9 / 5.0</h3>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+    <!-- Trust / Stats Section Ends -->
+
+    <!-- Popular Vehicles Section Starts -->
+    <section class="vehical" id="vehicles">
+        <div style="text-align: center;">
+            <span class="section-tag"><i class="fa-solid fa-fire"></i> Verified Showroom Inventory</span>
+        </div>
+        <h2 class="heading">Popular <span>Vehicles</span></h2>
+        <p class="subheading">
+            Single-owner, low-mileage vehicles tested and certified by master technicians. Includes complete RTO transfer assistance and 1-year dealership warranty.
+        </p>
+
+        <div class="slider">
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn" title="Previous Vehicle"></div>
+
+                <div class="wraper-box">
+                    <!-- Vehicle 1: Polo -->
+                    <div class="box active" id="car-img1">
+                        <span class="car-badge">Featured Pick • Single Owner</span>
+                        <img src="./image/polo.png.png" alt="Volkswagen Polo GT TSI">
+                        <div class="content">
+                            <h3>Volkswagen Polo GT TSI</h3>
+                            <div class="price">₹ 8,50,000 <small>• EMI from ₹14,200/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2020 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>Automatic (DSG)</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Petrol Turbo</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>50,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=POLO" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 2: Swift -->
+                    <div class="box" id="car-img2">
+                        <span class="car-badge">Sport Modified • Zero Depreciation</span>
+                        <img src="./image/swift.png.png" alt="Maruti Suzuki Swift ZXi+">
+                        <div class="content">
+                            <h3>Maruti Suzuki Swift ZXi+</h3>
+                            <div class="price">₹ 9,00,000 <small>• EMI from ₹15,100/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2022 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>5-Speed Manual</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Petrol DualJet</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>30,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=SWIFT" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 3: Venue -->
+                    <div class="box" id="car-img3">
+                        <span class="car-badge">Top End Edition • Sunroof</span>
+                        <img src="./image/venue.png" alt="Hyundai Venue SX (O)">
+                        <div class="content">
+                            <h3>Hyundai Venue SX (O) Turbo</h3>
+                            <div class="price">₹ 15,00,000 <small>• EMI from ₹25,400/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2023 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>6-Speed Manual</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Diesel CRDi</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>50,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=VENUE" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 4: Kiger -->
+                    <div class="box" id="car-img4">
+                        <span class="car-badge">RXZ Turbo • X-Tronic CVT</span>
+                        <img src="./image/kiger.png" alt="Renault Kiger RXZ Turbo">
+                        <div class="content">
+                            <h3>Renault Kiger RXZ Turbo</h3>
+                            <div class="price">₹ 10,00,000 <small>• EMI from ₹16,900/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2020 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>Automatic (CVT)</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Petrol Turbo</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>20,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=KIGER" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 5: Rapid -->
+                    <div class="box" id="car-img5">
+                        <span class="car-badge">Executive Sedan • German Engineering</span>
+                        <img src="./image/rapid2.png" alt="Skoda Rapid 1.0 TSI">
+                        <div class="content">
+                            <h3>Skoda Rapid 1.0 TSI Style</h3>
+                            <div class="price">₹ 8,00,000 <small>• EMI from ₹13,500/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2018 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>6-Speed Manual</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Petrol TSI</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>70,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=RAPID" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle 6: Punch -->
+                    <div class="box" id="car-img6">
+                        <span class="car-badge">Brand New Certified • 5-Star Safety</span>
+                        <img src="./image/tata punch.png" alt="Tata Punch Creative">
+                        <div class="content">
+                            <h3>Tata Punch Creative Dazzle</h3>
+                            <div class="price">₹ 7,50,000 <small>• EMI from ₹12,600/mo</small></div>
+                            <div class="specs-grid">
+                                <div class="spec-item"><i class="fa-solid fa-calendar"></i> <span>2023 Model</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>5-Speed Manual</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Petrol / iCNG</span></div>
+                                <div class="spec-item"><i class="fa-solid fa-road"></i> <span>40,000 km</span></div>
+                            </div>
+                            <a href="bookappointment.html?car=PUNCH" class="btn">
+                                <i class="fa-solid fa-calendar-check"></i> Book Test Drive
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="nextBtn" title="Next Vehicle"></div>
+            </div>
+
+            <!-- Indicator Dots -->
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
+                <div class="fa-regular fa-circle" id="forCar-img5"></div>
+                <div class="fa-regular fa-circle" id="forCar-img6"></div>
+            </div>
+
+            <!-- Quick Switcher Thumbnails -->
+            <div class="vehicle-thumbnails">
+                <button type="button" class="thumb-item active" data-index="0">
+                    <img src="./image/polo.png.png" alt="Volkswagen Polo">
+                    <span>Polo GT TSI</span>
+                </button>
+                <button type="button" class="thumb-item" data-index="1">
+                    <img src="./image/swift.png.png" alt="Maruti Swift">
+                    <span>Swift ZXi+</span>
+                </button>
+                <button type="button" class="thumb-item" data-index="2">
+                    <img src="./image/venue.png" alt="Hyundai Venue">
+                    <span>Venue Turbo</span>
+                </button>
+                <button type="button" class="thumb-item" data-index="3">
+                    <img src="./image/kiger.png" alt="Renault Kiger">
+                    <span>Kiger RXZ</span>
+                </button>
+                <button type="button" class="thumb-item" data-index="4">
+                    <img src="./image/rapid2.png" alt="Skoda Rapid">
+                    <span>Rapid TSI</span>
+                </button>
+                <button type="button" class="thumb-item" data-index="5">
+                    <img src="./image/tata punch.png" alt="Tata Punch">
+                    <span>Punch Dazzle</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Vehicles Section Ends -->
+
+    <!-- Services Section Starts -->
+    <section class="services" id="services">
+        <div style="text-align: center;">
+            <span class="section-tag"><i class="fa-solid fa-award"></i> The Dream Cars Advantage</span>
+        </div>
+        <h2 class="heading">Our Premium <span>Services</span></h2>
+        <p class="subheading">
+            From seamless financing to doorstep evaluation, our end-to-end concierge services ensure you never have to worry about a single detail.
+        </p>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-car-tunnel"></i>
+                <h3>Certified Pre-Owned Sales</h3>
+                <p>Every vehicle is rigorously evaluated across 150 mechanical and electrical parameters with verified odometer readings and single-owner legal titles.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-house-chimney-crack"></i>
+                <h3>Doorstep VIP Test Drive</h3>
+                <p>Too busy to visit our showroom? Select any vehicle online and our product specialist will deliver it directly to your residence or office for a private drive.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-receipt"></i>
+                <h3>Instant Auto Financing</h3>
+                <p>Benefit from institutional partnerships with HDFC, ICICI, and Axis Bank. Instant paperless loan approvals at the most competitive interest rates.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>1-Year Dealership Warranty</h3>
+                <p>Drive with absolute confidence. All certified vehicles include a 12-month comprehensive powertrain warranty and 24/7 pan-India emergency roadside assistance.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <h3>Guaranteed Trade-In Value</h3>
+                <p>Upgrade with ease. We offer competitive spot valuations for your current car, same-day payment settlement, and zero-hassle RTO ownership transfers.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                <h3>Ceramic & Detailing Studio</h3>
+                <p>Keep your automobile in immaculate condition with 9H ceramic coating, paint protection films (PPF), high-grade interior steam sanitization, and dent repair.</p>
+            </div>
+        </div>
+
+        <div class="services-cta">
+            <a href="bookappointment.html" class="btn">
+                <i class="fa-solid fa-calendar-check"></i> Book An Ownership Consultation
+            </a>
+        </div>
+    </section>
+    <!-- Services Section Ends -->
+
+    <!-- Interactive EMI Calculator Starts -->
+    <section class="calculator-section" id="finance">
+        <div style="text-align: center;">
+            <span class="section-tag"><i class="fa-solid fa-calculator"></i> Transparent Financing</span>
+        </div>
+        <h2 class="heading">EMI <span>Calculator</span></h2>
+        <p class="subheading">
+            Plan your certified luxury vehicle purchase with instant customized financing rates from our partner banking institutions.
+        </p>
+
+        <div class="calc-card">
+            <div class="calc-inputs">
+                <div class="calc-group">
+                    <div class="calc-label-row">
+                        <label for="car-price-range"><i class="fa-solid fa-tag"></i> Vehicle Price</label>
+                        <span class="calc-value" id="price-val">₹ 15,00,000</span>
+                    </div>
+                    <input type="range" id="car-price-range" min="300000" max="10000000" step="50000" value="1500000">
+                    <div class="range-limits"><span>₹3 Lakh</span><span>₹1 Crore</span></div>
+                </div>
+
+                <div class="calc-group">
+                    <div class="calc-label-row">
+                        <label for="down-payment-range"><i class="fa-solid fa-hand-holding-dollar"></i> Down Payment</label>
+                        <span class="calc-value" id="down-val">₹ 3,00,000</span>
+                    </div>
+                    <input type="range" id="down-payment-range" min="0" max="5000000" step="50000" value="300000">
+                    <div class="range-limits"><span>₹0 (Zero Down)</span><span>₹50 Lakh</span></div>
+                </div>
+
+                <div class="calc-row-two">
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <label for="tenure-range"><i class="fa-solid fa-clock"></i> Loan Tenure</label>
+                            <span class="calc-value" id="tenure-val">48 Months</span>
+                        </div>
+                        <input type="range" id="tenure-range" min="12" max="84" step="12" value="48">
+                        <div class="range-limits"><span>12 Mo</span><span>84 Mo</span></div>
+                    </div>
+
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <label for="interest-range"><i class="fa-solid fa-percent"></i> Interest Rate</label>
+                            <span class="calc-value" id="interest-val">8.5% p.a.</span>
+                        </div>
+                        <input type="range" id="interest-range" min="7" max="15" step="0.25" value="8.5">
+                        <div class="range-limits"><span>7.0%</span><span>15.0%</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-results">
+                <div class="result-badge"><i class="fa-solid fa-certificate"></i> Instant Approval Estimate</div>
+                <div class="result-box">
+                    <span class="result-title">Estimated Monthly EMI</span>
+                    <span class="result-emi" id="emi-result">₹ 29,599</span>
+                    <span class="result-note">*Subject to bank credit verification</span>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="breakdown-item">
+                        <span>Loan Principal:</span>
+                        <strong id="principal-result">₹ 12,00,000</strong>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Total Interest:</span>
+                        <strong id="interest-result">₹ 2,20,752</strong>
+                    </div>
+                    <div class="breakdown-item total">
+                        <span>Total Payable:</span>
+                        <strong id="total-result">₹ 14,20,752</strong>
+                    </div>
+                </div>
+
+                <a href="bookappointment.html" id="apply-finance-btn" class="btn btn-block">
+                    <i class="fa-solid fa-file-signature"></i> Apply for Paperless Loan
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Interactive EMI Calculator Ends -->
+
+    <!-- The Luxury Vault (Featured Supercars) Starts -->
+    <section class="featured" id="featured">
+        <div style="text-align: center;">
+            <span class="section-tag" style="background: rgba(229, 169, 60, 0.2); border-color: rgba(229, 169, 60, 0.4); color: var(--gold-light);">
+                <i class="fa-solid fa-gem"></i> Black-Label Concierge
+            </span>
+        </div>
+        <h2 class="heading">The Luxury <span>Vault</span></h2>
+        <p class="subheading">
+            Exotic, ultra-luxury, and bespoke performance automobiles curated strictly for discerning enthusiasts and private collectors.
+        </p>
+
+        <div class="featured-slider">
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn" title="Previous Exotic"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+                        <!-- Car 1: BMW M5 -->
+                        <div class="box active">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">600 HP • 4.4L V8</span>
+                            <img src="./image/m bwm.png" alt="BMW M5 Competition">
+                            <h3>BMW M-5 Competition</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 2.37 Cr</div>
+                            <a href="bookappointment.html?car=BMW%20M-5" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 2: Rolls Royce -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">V12 Twin-Turbo • Bespoke</span>
+                            <img src="./image/rolls royce.png" alt="Rolls-Royce Phantom VIII">
+                            <h3>Rolls-Royce Phantom VIII</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 9.50 Cr</div>
+                            <a href="bookappointment.html?car=PHANTOM" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 3: Maybach -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">Executive Lounge • 4MATIC</span>
+                            <img src="./image/may2.png" alt="Mercedes-Maybach S-Class">
+                            <h3>Mercedes-Maybach S-Class</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 4.45 Cr</div>
+                            <a href="bookappointment.html?car=MAYBACH" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 4: Lexus -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">Hybrid V6 • Takumi Craft</span>
+                            <img src="./image/lexus.png" alt="Lexus LC 500h Coupe">
+                            <h3>Lexus LC 500h Coupe</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 2.05 Cr</div>
+                            <a href="bookappointment.html?car=LEXUS" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 5: Lambo -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">640 HP • V10 Beast</span>
+                            <img src="./image/lambo.jpeg" alt="Lamborghini Huracán EVO">
+                            <h3>Lamborghini Huracán EVO</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 4.10 Cr</div>
+                            <a href="bookappointment.html?car=LAMBORGHINI" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 6: Cadillac -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">6.2L V8 • 38-Inch OLED</span>
+                            <img src="./image/car12.png" alt="Cadillac Escalade Platinum">
+                            <h3>Cadillac Escalade Platinum</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 1.85 Cr</div>
+                            <a href="bookappointment.html?car=CADILLAC" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 7: Audi -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">Quattro AWD • V10 Plus</span>
+                            <img src="./image/car13.png" alt="Audi R8 V10 Plus">
+                            <h3>Audi R8 V10 Plus</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 2.75 Cr</div>
+                            <a href="bookappointment.html?car=AUDI" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Car 8: Benz -->
+                        <div class="box">
+                            <span class="section-tag" style="font-size: 1.1rem; padding: 0.3rem 1.2rem; align-self: center;">Biturbo V8 • Race Mode</span>
+                            <img src="./image/car14.png" alt="Mercedes-AMG GT Coupe">
+                            <h3>Mercedes-AMG GT Coupe</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="price">₹ 3.10 Cr</div>
+                            <a href="bookappointment.html?car=MERCEDES%20BENZ" class="btn">
+                                Inquire Privately <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn" title="Next Exotic"></div>
+            </div>
+
+            <!-- Indicator Dots -->
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- The Luxury Vault Ends -->
+
+    <!-- Subscribe Section Starts -->
+    <section class="subscribe">
+        <h3>Subscribe for Private Vehicle Alerts</h3>
+        <p>Get exclusive early access to incoming exotic vehicles, sports cars, and luxury trade-ins before they are announced to the public.</p>
+
+        <form action="">
+            <input type="email" placeholder="Enter your official email address" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+    <!-- Subscribe Section Ends -->
+
+    <!-- Customer Reviews Section Starts -->
+    <section class="reviews" id="reviews">
+        <div style="text-align: center;">
+            <span class="section-tag"><i class="fa-solid fa-thumbs-up"></i> Verified Owner Feedback</span>
+        </div>
+        <h2 class="heading">Client <span>Stories</span></h2>
+        <p class="subheading">
+            Authentic experiences from over 3,100 clients who chose Dream Cars for their certified luxury automobile purchase.
+        </p>
+
+        <div class="review-slider">
+            <div class="fa-solid fa-angle-left rPreNext" id="rPreBtn" title="Previous Review"></div>
+            <div class="review-wrapper">
+                <div class="review-wrapper-box">
+                    <!-- Review 1 -->
+                    <div class="box active">
+                        <img src="./image/img1.jpg" alt="Karthik Raja - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • BMW M5 Competition</div>
+                        <div class="content">
+                            <p>"The buying experience at Dream Cars was nothing short of world-class. The car was delivered in immaculate condition with every service record verified. Transparent pricing and zero dealership pressure."</p>
+                            <h3>Karthik Raja</h3>
+                            <h4>Managing Director, Chennai</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="box">
+                        <img src="./image/img2.jpg" alt="Ananya Sundaram - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • Volkswagen Polo GT</div>
+                        <div class="content">
+                            <p>"I was nervous about buying a pre-owned car, but the 150-point diagnostic scan and 1-year dealership warranty gave me total confidence. The doorstep test drive made the final decision so effortless!"</p>
+                            <h3>Ananya Sundaram</h3>
+                            <h4>Tech Consultant, Coimbatore</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="box">
+                        <img src="./image/img3.jpg" alt="Dr. Arvind Swaminathan - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • Rolls-Royce Phantom</div>
+                        <div class="content">
+                            <p>"Unmatched discretion, concierge-level delivery, and pristine mechanical condition. Dream Cars stands leagues ahead of traditional luxury dealerships in South India."</p>
+                            <h3>Dr. Arvind Swaminathan</h3>
+                            <h4>Senior Surgeon, Chennai</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="box">
+                        <img src="./image/img4.jpg" alt="Rajeshwaran V. - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • Hyundai Venue Turbo</div>
+                        <div class="content">
+                            <p>"Paperless financing approved in just 4 hours and instant ownership transfer. The car drives like it just rolled out of the factory. Will definitely purchase my next car from them!"</p>
+                            <h3>Rajeshwaran V.</h3>
+                            <h4>Entrepreneur, Salem</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="box">
+                        <img src="./image/img5.jpg" alt="Deepika S. - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • Tata Punch Creative</div>
+                        <div class="content">
+                            <p>"Honest and polite staff who genuinely know automotive specs inside out. No hidden charges, and they even handled the fast-tag, insurance, and ceramic coating before handover."</p>
+                            <h3>Deepika S.</h3>
+                            <h4>Architect, Pondicherry</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="box">
+                        <img src="./image/img6.jpg" alt="Vikramaditya Rao - Client">
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer • Mercedes-Maybach</div>
+                        <div class="content">
+                            <p>"Exemplary hospitality and absolute transparency. From vehicle selection to white-glove handover, the entire journey was flawless. Thank you, Dream Cars team!"</p>
+                            <h3>Vikramaditya Rao</h3>
+                            <h4>Private Investor, Chennai</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fa-solid fa-angle-right rPreNext" id="rNextBtn" title="Next Review"></div>
+
+            <div class="rActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Reviews Section Ends -->
+
+    <!-- Contact & Showroom Section Starts -->
+    <section class="contact" id="contact">
+        <div style="text-align: center;">
+            <span class="section-tag"><i class="fa-solid fa-headset"></i> VIP Concierge Support</span>
+        </div>
+        <h2 class="heading">Get in <span>Touch</span></h2>
+        <p class="subheading">
+            Connect with our certified automotive advisors for vehicle inquiries, trade-in valuations, or personal showroom tours.
+        </p>
+
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781700.7626304314!2d74.91767141980161!3d29.285725544780725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2schennai!5e0!3m2!1sen!2sin!4v1676226353123!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dream Cars Chennai Showroom">
+            </iframe>
+
+            <form action="">
+                <h3>Inquire About a Vehicle</h3>
+                <input type="text" placeholder="Your Full Name" class="box" required>
+                <input type="email" placeholder="Official Email Address" class="box" required>
+                <input type="tel" placeholder="10-Digit Mobile Number" class="box" required>
+                <textarea class="box" cols="30" rows="10" placeholder="Tell us which car you are interested in or if you need financing / trade-in assistance..."></textarea>
+                <button type="submit" class="btn" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact & Showroom Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer class="footer">
+        <div class="footer-box-container">
+            <div class="footer-about">
+                <h2>DREAM<span>CARS</span></h2>
+                <p>South India's most trusted certified luxury and performance pre-owned automotive showroom. Dedicated to unmatched quality, complete transparency, and white-glove customer care.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Flagship Branches</h3>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Chennai (OMR & Anna Nagar)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Coimbatore (Avinashi Rd)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Salem (Bangalore Highway)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Pondicherry (ECR)</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Vellore (Katpadi)</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Navigation</h3>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Showroom Home</a>
+                <a href="#vehicles"><i class="fa-solid fa-angle-right"></i> Certified Inventory</a>
+                <a href="#services"><i class="fa-solid fa-angle-right"></i> Ownership Services</a>
+                <a href="#finance"><i class="fa-solid fa-angle-right"></i> Financing Calculator</a>
+                <a href="#featured"><i class="fa-solid fa-angle-right"></i> The Luxury Vault</a>
+                <a href="bookappointment.html"><i class="fa-solid fa-angle-right"></i> Book Test Drive</a>
+                <a href="login.html"><i class="fa-solid fa-angle-right"></i> Client Portal</a>
+            </div>
+
+            <div class="box">
+                <h3>Direct Concierge</h3>
+                <a href="tel:+919283184797"><i class="fa-solid fa-phone"></i> +91 92831 84797</a>
+                <a href="tel:+919551402411"><i class="fa-solid fa-phone"></i> +91 95514 02411</a>
+                <a href="mailto:concierge@dreamcars.com"><i class="fa-solid fa-envelope"></i> concierge@dreamcars.com</a>
+                <a href="#"><i class="fa-solid fa-shield-halved"></i> 100% Verified Ownership Transfer</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2026 DREAM CARS Automotive Pvt Ltd. All rights reserved.</span>
+            <span>Certified Pre-Owned Excellence • Privacy Policy • Terms of Sale</span>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <!-- Floating Action Buttons Starts -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919283184797?text=Hello%20Dream%20Cars%20Concierge,%20I%20would%20like%20to%20inquire%20about%20a%20vehicle." target="_blank" rel="noopener noreferrer" class="float-btn float-wa" title="Direct WhatsApp Concierge">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="float-tooltip">Chat with Concierge</span>
+        </a>
+        <button type="button" id="back-to-top" class="float-btn float-top" title="Scroll to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+    <!-- Floating Action Buttons Ends -->
+
+    <!-- Custom Script File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

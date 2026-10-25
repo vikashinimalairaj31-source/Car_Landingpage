@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create VIP Client Account - DREAM CARS</title>
+    <meta name="description" content="Register your Dream Cars client account for private luxury inventory alerts, concierge test drive bookings, and vehicle management.">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <!-- Brand Logo -->
+    <div class="signup-brand">
+        <a href="index.html">
+            <div class="logo-badge"><i class="fa-solid fa-crown"></i></div>
+            <div class="logo-text">
+                <span class="logo-main">DREAM<span>CARS</span></span>
+                <span class="logo-sub">Certified Luxury Automotive</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Signup Container -->
+    <div class="signup-container">
+        <div class="signup-header">
+            <h2>Create <span>VIP Account</span></h2>
+            <p>Access certified inventory, private test drive requests, and fast-track auto financing.</p>
+        </div>
+
+        <form id="signup-form">
+            <div class="form-group full-width">
+                <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Official Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="At least 6 characters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password"><i class="fa-solid fa-shield"></i> Confirm</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Repeat password" required>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="phone"><i class="fa-solid fa-phone"></i> Mobile Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+            </div>
+
+            <button type="submit" class="submit-btn"><i class="fa-solid fa-user-plus"></i> Create Client Account</button>
+        </form>
+
+        <div class="social-signup">
+            <p>Or sign up with</p>
+            <div class="social-buttons">
+                <button type="button" class="social-btn google">
+                    <i class="fab fa-google"></i> Google
+                </button>
+                <button type="button" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+            </div>
+        </div>
+
+        <p class="login-link">Already have an account? <a href="login.html">Sign in here</a></p>
+    </div>
+
+    <!-- Return to Showroom -->
+    <div class="back-home">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Return to Dream Cars Showroom</a>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

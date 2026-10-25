@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Login & Client Portal - Luxury Styling
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --gold: #d99b26;
+    --gold-gradient: linear-gradient(135deg, #e5a93c 0%, #d48b18 100%);
+    --gold-glow: rgba(229, 169, 60, 0.28);
+    --obsidian: #090d16;
+    --surface-dark: #101626;
+    --surface-card: #ffffff;
+    --border-card: #e2e8f0;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 20%, rgba(229, 169, 60, 0.12) 0%, var(--obsidian) 70%);
+    padding: 2.5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.login-brand {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.login-brand a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.4rem;
+    text-decoration: none;
+}
+
+.login-brand .logo-badge {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.3rem;
+    background: var(--gold-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.2rem;
+    box-shadow: 0 4px 18px var(--gold-glow);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.login-brand a:hover .logo-badge {
+    transform: rotate(6deg) scale(1.06);
+}
+
+.login-brand .logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-brand .logo-main {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+.login-brand .logo-main span {
+    color: var(--gold);
+}
+
+.login-brand .logo-sub {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    background: var(--surface-card);
+    padding: 4rem 3.5rem;
+    border-radius: 2.2rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-header {
+    display: flex;
+    margin-bottom: 2.8rem;
+    border-bottom: 2px solid #edf2f7;
+    position: relative;
+}
+
+.form-header button {
+    flex: 1;
+    padding: 1.2rem;
+    font-family: var(--font-body);
+    font-size: 1.55rem;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #64748b;
+    transition: all 0.25s ease;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.form-header button.active {
+    color: var(--obsidian);
+    border-bottom: 3px solid var(--gold);
+}
+
+form {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+form.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group label {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.form-group label i {
+    color: var(--gold);
+    margin-right: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1.25rem 1.6rem;
+    font-size: 1.45rem;
+    border: 1px solid var(--border-card);
+    border-radius: 1rem;
+    background: #f8fafc;
+    font-family: inherit;
+    transition: all 0.25s ease;
+}
+
+.form-group input:focus {
+    background: #ffffff;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-glow);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.35rem;
+    background: var(--gold-gradient);
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 18px var(--gold-glow);
+    transition: all 0.3s ease;
+    margin-top: 1.2rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 139, 24, 0.4);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.35rem;
+}
+
+.form-footer a {
+    color: #64748b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.form-footer a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    display: none;
+    background: #fef2f2;
+    padding: 0.9rem 1.4rem;
+    border-radius: 0.8rem;
+    border-left: 3px solid #dc2626;
+}
+
+.back-home {
+    margin-top: 2.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.back-home a {
+    color: #cbd5e1;
+    font-size: 1.45rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: color 0.2s;
+}
+
+.back-home a:hover {
+    color: var(--gold);
+}
+
+.back-home a i {
+    color: var(--gold);
+}
